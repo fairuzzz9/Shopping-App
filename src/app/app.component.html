@@ -1,0 +1,22 @@
+<h1>
+  {{ title }}
+</h1>
+<div>
+  <div class="buttons">
+    <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item routerLink="/customers">Customers</button>
+      <button mat-menu-item routerLink="/orders">Orders</button>
+    </mat-menu>
+
+    <button type="button" mat-raised-button routerLink="">Home</button>
+    <button type="button" mat-raised-button routerLink="/customers">
+      Customers
+    </button>
+    <button type="button" mat-raised-button routerLink="/orders">Orders</button>
+  </div>
+</div>
+<div>
+  <mat-slide-toggle>Toggle</mat-slide-toggle>
+</div>
+<router-outlet></router-outlet>
