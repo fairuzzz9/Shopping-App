@@ -4,6 +4,8 @@ import { CommonModule } from '@angular/common';
 import { OrdersRoutingModule } from './orders-routing.module';
 import { OrdersComponent } from './orders.component';
 import {MatTabsModule} from '@angular/material/tabs';
+import {MatTreeModule} from '@angular/material/tree';
+import {MatIconModule} from '@angular/material/icon';
 
 
 @NgModule({
@@ -13,7 +15,9 @@ import {MatTabsModule} from '@angular/material/tabs';
   imports: [
     CommonModule,
     OrdersRoutingModule,
-    MatTabsModule
+    MatTabsModule,
+    MatTreeModule,
+    MatIconModule
   ]
 })
 export class OrdersModule { }
